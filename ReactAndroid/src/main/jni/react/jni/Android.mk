@@ -5,6 +5,11 @@
 
 LOCAL_PATH := $(call my-dir)
 
+# Don't strip debug builds
+ifeq ($(APP_OPTIM),debug)
+    cmd-strip :=
+endif
+
 include $(CLEAR_VARS)
 
 # Include . in the header search path for all source files in this module.
