@@ -43,6 +43,8 @@ public abstract class ReactActivity extends AppCompatActivity
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     mDelegate.onCreate(savedInstanceState);
+    String test = null;
+    test.toString();
   }
 
   @Override
